@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#44cccc"
+    tools:context="com.example.user.finalclient.Cart">
+
+
+    <Switch
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="19dp"
+        android:text="Store" />
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/s1"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_toLeftOf="@+id/s1"
+        android:layout_toStartOf="@+id/s1"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/t1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb1"
+        android:layout_alignStart="@+id/cb1"
+        android:layout_below="@+id/cb1"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cb2"
+        android:layout_below="@+id/cb2"
+        android:layout_marginTop="22dp"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb3"
+        android:layout_alignStart="@+id/cb3"
+        android:layout_below="@+id/cb3"
+        android:layout_marginTop="17dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb2"
+        android:layout_alignParentEnd="true"
+        android:background="#ffbb11"
+        android:ems="5"
+        android:hint="Quantity"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffbb11"
+        android:ems="5"
+        android:hint="Quantity"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cb3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffbb11"
+        android:ems="5"
+        android:hint="Quantity"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cb4"
+        android:layout_alignBottom="@+id/cb4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffbb11"
+        android:ems="5"
+        android:hint="Quantity"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/bttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cb4"
+        android:layout_marginTop="31dp"
+        android:background="#ff1100"
+        android:text="Order" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bttn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/bttn"
+        android:layout_below="@+id/bttn"
+        android:layout_marginTop="17dp"
+        android:background="#ffffff"
+        android:text="Bill"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="#ccccff" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="#ffffff"
+        android:text="Feedback"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv1"
+        android:layout_toStartOf="@+id/t5"
+        android:background="?attr/colorPrimary"
+        android:text="Status" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent"
+
+    tools:context="com.example.user.finalclient.WelcomeActivity"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:gravity="center"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Start to order" />
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtWelcome"
+        android:layout_below="@+id/startbutton"
+        android:layout_marginTop="24dp"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/startbutton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
